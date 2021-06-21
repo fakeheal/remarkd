@@ -43,6 +43,15 @@ Self-hosted app for orginising links, articles, quotes, texts, images, videos.
 
 ### API
 
+#### Installing
+
+#### Creating first user
+
+```
+./vendor/bin/sail php artisan remarkd:create-user
+```
+
+#### Inviting people to collaborate
 
 #### Running
 
