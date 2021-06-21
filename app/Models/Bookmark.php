@@ -30,4 +30,23 @@ class Bookmark extends Model
         'self_destruct_at' => 'datetime'
     ];
 
+    protected function notes()
+    {
+        return $this->hasMany(Note::class);
+    }
+
+    public function getIsMirrorableAttribute()
+    {
+        return in_array($this->type, [
+            self::$availableTypes['VIDEO'],
+            self::$availableTypes['LINK'],
+            self::$availableTypes['IMAGE'],
+        ]);
+    }
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
+
 }

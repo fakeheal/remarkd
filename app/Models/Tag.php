@@ -15,4 +15,9 @@ class Tag extends Model
         'description'
     ];
 
+    public function bookmarks()
+    {
+        return $this->belongsToMany(Bookmark::class);
+    }
+
 }

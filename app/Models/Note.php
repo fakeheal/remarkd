@@ -14,4 +14,14 @@ class Note extends Model
         'parent_id',
         'content'
     ];
+
+    public function bookmark()
+    {
+        return $this->belongsTo(Bookmark::class);
+    }
+
+    public function parent()
+    {
+        return $this->belongsTo(Note::class);
+    }
 }
