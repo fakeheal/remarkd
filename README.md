@@ -25,14 +25,6 @@ Self-hosted app for orginising links, articles, quotes, texts, images, videos.
 - mysql
 - redis
 
-### Digital Ocean (Droplet)
-
-### Digital Ocean (App Platform)
-
-### Netlify
-
-### Heroku
-
 ## Mobile Apps
 
 ### Download
