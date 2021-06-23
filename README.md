@@ -37,17 +37,40 @@ Self-hosted app for orginising links, articles, quotes, texts, images, videos.
 
 #### Installing
 
+1. Clone the repository:
+
+```
+git clone https://github.com/fakeheal/remarkd.git
+```
+
+2. Install dependencies:
+
+```
+composer install
+```
+
+4. Set environment variables:
+```
+cp .env.example .env
+```
+
+3. Start using [Laravel Sail](https://laravel.com/docs/8.x/sail):
+
+```
+./vendor/bin/sail up
+```
+
+> On Windows, you need [Docker + WSL2](https://docs.docker.com/docker-for-windows/wsl/). Run the command above directly from the `wsl` console.
+
 #### Creating first user
 
 ```
 ./vendor/bin/sail php artisan remarkd:create-user
 ```
 
-#### Inviting people to collaborate
-
-#### Running
-
-
 #### Testing
 
+```
+./vendor/bin/sail test
+```
 
