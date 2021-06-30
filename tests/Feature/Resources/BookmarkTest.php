@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\Unit\Resources;
+namespace Tests\Feature\Resources;
 
 use App\Models\Bookmark;
 use App\Models\Tag;

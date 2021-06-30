@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Note extends Model
+class BookmarkNote extends Model
 {
     use HasFactory;
 
@@ -22,6 +22,6 @@ class Note extends Model
 
     public function parent()
     {
-        return $this->belongsTo(Note::class);
+        return $this->belongsTo(BookmarkNote::class, 'parent_id');
     }
 }

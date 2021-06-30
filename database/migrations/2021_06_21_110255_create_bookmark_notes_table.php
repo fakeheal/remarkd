@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateNotesTable extends Migration
+class CreateBookmarkNotesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateNotesTable extends Migration
      */
     public function up()
     {
-        Schema::create('notes', function (Blueprint $table) {
+        Schema::create('bookmark_notes', function (Blueprint $table) {
             $table->id();
             $table->integer('bookmark_id');
             $table->integer('parent_id')->nullable();

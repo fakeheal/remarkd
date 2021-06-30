@@ -30,9 +30,9 @@ class Bookmark extends Model
         'self_destruct_at' => 'datetime'
     ];
 
-    protected function notes()
+    public function notes()
     {
-        return $this->hasMany(Note::class);
+        return $this->hasMany(BookmarkNote::class);
     }
 
     public function getIsMirrorableAttribute()
