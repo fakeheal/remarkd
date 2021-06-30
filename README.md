@@ -49,19 +49,39 @@ git clone https://github.com/fakeheal/remarkd.git
 composer install
 ```
 
-4. Set environment variables:
+3. Set environment variables:
+
 ```
 cp .env.example .env
 ```
 
-3. Start using [Laravel Sail](https://laravel.com/docs/8.x/sail):
+4. Start using [Laravel Sail](https://laravel.com/docs/8.x/sail):
+
+> On Windows, you need [Docker + WSL2](https://docs.docker.com/docker-for-windows/wsl/). Run the command above directly from the `wsl` console.
 
 ```
 ./vendor/bin/sail up
 ```
 
-> On Windows, you need [Docker + WSL2](https://docs.docker.com/docker-for-windows/wsl/). Run the command above directly from the `wsl` console.
+5. Install dependencies for the front-end:
 
+```
+./vendor/bin/sail npm install
+```
+
+6. Compile assets
+
+```
+./vendor/bin/sail npm run dev 
+```
+
+> More at Laravel's official documentation: https://laravel.com/docs/8.x/mix#running-mix
+
+7. Compile during development (with watcher):
+
+```
+./vendor/bin/sail npm run watch
+```
 #### Creating first user
 
 ```
